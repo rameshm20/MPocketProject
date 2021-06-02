@@ -1,0 +1,317 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-02T05:09:24.789Z",
+        "line": 3,
+        "name": "Verify list of users",
+        "description": "",
+        "id": "validating-rest-api-s;verify-list-of-users",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 534511200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Goto to url",
+            "match": {
+              "location": "StepDefination.goto_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1640453900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User calls \"GoRestAPI\" with http get request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GoRestAPI\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.user_calls_with_http_get_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15029800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Users"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-02T05:09:26.993Z",
+        "line": 17,
+        "name": "Update the user",
+        "description": "",
+        "id": "validating-rest-api-s;update-the-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 815600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Goto to url and search \"user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefination.goto_to_url_and_search(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 281894900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Update \"user\" with http PUT request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefination.update_with_http_PUT_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 376500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 327318100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify the \"test@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@test.com\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.verify_the(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-02T05:09:27.603Z",
+        "line": 27,
+        "name": "Verify active and inactive users",
+        "description": "",
+        "id": "validating-rest-api-s;verify-active-and-inactive-users;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 523600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Goto to url",
+            "match": {
+              "location": "StepDefination.goto_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 271613200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Filter \"Active\" with http get request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Active\"",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefination.filter_with_http_get_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 427000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26344500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Get \"Active\" count",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Active\"",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefination.get_user_count(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-02T05:09:27.903Z",
+        "line": 28,
+        "name": "Verify active and inactive users",
+        "description": "",
+        "id": "validating-rest-api-s;verify-active-and-inactive-users;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 406800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Goto to url",
+            "match": {
+              "location": "StepDefination.goto_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 256568000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Filter \"Inactive\" with http get request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inactive\"",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefination.filter_with_http_get_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2313500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20635700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Get \"Inactive\" count",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Inactive\"",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefination.get_user_count(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating rest API\u0027s",
+    "description": "",
+    "id": "validating-rest-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/restValidations.feature",
+    "tags": []
+  }
+]
